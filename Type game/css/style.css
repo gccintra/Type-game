@@ -48,8 +48,25 @@ body{
     margin-top: 17px;
     padding: 12px 0;
     border-top: 1px solid #ccc;
+    align-items: center;
 }
 
+.content button{
+    border: none;
+    outline: none;
+    width: 105px;
+    background-color: #041E40;
+    color: #fff;
+    padding: 8px 0;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 50px;
+    transition: transform 0.3s ease;
+}
+.content button:active{
+    transform: scale(0.97);
+}
 
 .content .result-details{
     display: flex;
@@ -60,4 +77,30 @@ body{
 .result-details li{
     display: flex;
     list-style: none;
+    align-items: center;
+    height: 22px;
 }
+
+.result-details li:not(:first-child){
+    padding-left: 22px;
+    border-left: 1px solid #ccc;
+}
+
+.result-details li p{
+    font-size: 19px;
+}
+
+.result-details li span{
+    display: block;
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+.result-details li:not(:first-child) span{
+    font-weight: 500;
+}
+
+.result-details li b{
+    font-weight: 500;
+}
+
