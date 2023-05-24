@@ -26,6 +26,11 @@ body{
     border: 1px solid #ccc;
     border-radius: 10px;
 }
+.wrapper .input-field{
+    z-index: -99;
+    position: absolute;
+    opacity: 0;
+}
 
 .content-box .typing-text{
     max-height: 255px;
